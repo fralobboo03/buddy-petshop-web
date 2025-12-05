@@ -33,6 +33,15 @@ export const NavigationItems: NavigationItem[] = [
         url: '/dashboard/default',
         icon: 'dashboard',
         breadcrumbs: false
+      },
+      {
+        id: 'home',
+        title: 'Home',
+        type: 'item',
+        classes: 'nav-item',
+        url: '/home',
+        icon: 'dashboard',
+        breadcrumbs: false
       }
     ]
   },

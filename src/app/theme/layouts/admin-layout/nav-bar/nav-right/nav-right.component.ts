@@ -1,6 +1,6 @@
 // angular import
 import { Component, inject, input, output } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 // project import
 
@@ -42,6 +42,8 @@ export class NavRightComponent {
   windowWidth: number;
   screenFull: boolean = true;
 
+  private router = inject(Router);
+
   constructor() {
     this.windowWidth = window.innerWidth;
     this.iconService.addIcon(
@@ -70,23 +72,28 @@ export class NavRightComponent {
   profile = [
     {
       icon: 'edit',
-      title: 'Edit Profile'
+      title: 'Edit Profile',
+      fn: 'edit'
     },
     {
       icon: 'user',
-      title: 'View Profile'
+      title: 'View Profile',
+      fn: 'View Profile'
     },
     {
       icon: 'profile',
-      title: 'Social Profile'
+      title: 'Social Profile',
+      fn: 'Social Profile'
     },
     {
       icon: 'wallet',
-      title: 'Billing'
+      title: 'Register',
+      fn: 'register'
     },
     {
       icon: 'logout',
-      title: 'Logout'
+      title: 'Logout',
+      fn: 'login'
     }
   ];
 
@@ -112,4 +119,9 @@ export class NavRightComponent {
       title: 'History'
     }
   ];
+
+  test(param: string){
+    console.log("go to page:", param);
+    this.router.navigate(["/"+param]);
+  }
 }
