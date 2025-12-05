@@ -8,7 +8,7 @@
 
 Mantis is a free Angular admin dashboard template built with Angular and latest Bootstrap 5. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
 
-### Name Derived From Nature
+### Name Derived From Nature test
 
 Mantis Logo is inspired from the insect name - 'Mantises' as they have triangular heads with flexible Necks. Also, the name is derived from two popular UI frameworks, Bootstrap and Ant Design (M-Ant-is).
 
