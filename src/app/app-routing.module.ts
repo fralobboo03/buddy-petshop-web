@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Project import
 import { AdminComponent } from './theme/layouts/admin-layout/admin-layout.component';
 import { GuestLayoutComponent } from './theme/layouts/guest-layout/guest-layout.component';
+import { ProductList } from './demo/dashboard/home/product-list/product-list';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: Home
+      },
+      {
+        path: 'home/product/:id',
+        component: ProductList
       },
     ]
   },

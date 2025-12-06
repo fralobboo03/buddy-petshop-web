@@ -1,16 +1,18 @@
 import { ProductService } from './../services/product.service';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject , OnInit } from '@angular/core';
 import { Router, ActivatedRoute} from '@angular/router';
 import { CartService } from './../services/cart.service';
 import { Product } from '../types/products';
 import { CommonModule } from '@angular/common';
 
 
+
+
 @Component({
   selector: 'app-product-list',
   imports: [CommonModule],
   templateUrl: './product-list.html',
-  styleUrls: ['./product-list.css']
+  styleUrls: ['./product-list.scss'],
 })
 export class ProductList implements OnInit {
   // 1. แก้ไข: ประกาศเป็น public และกำหนดค่าเริ่มต้นเป็น Array ว่าง
@@ -19,7 +21,7 @@ route = inject(ActivatedRoute);
 router = inject(Router);
 cartService =inject(CartService);
 productService=inject(ProductService);
-  constructor( 
+  constructor(
   ) {}
 
   ngOnInit() {

@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import {Product} from './../types/products';
 import { products } from '../product-item';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ProductService {
 
   constructor() { }
