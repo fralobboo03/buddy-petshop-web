@@ -1,11 +1,19 @@
-import { Component } from '@angular/core';
+import { Component , OnInit } from '@angular/core';
+import { RouterOutlet } from "@angular/router";
+import { CartList } from "./cart-list/cart-list";
 
 @Component({
   selector: 'app-home',
-  imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.scss'
+  styleUrls: [ './home.scss' ],
+  imports: [RouterOutlet, CartList]
 })
-export class Home {
+export class Home implements OnInit {
+constructor( ) {
+  }
 
+
+   ngOnInit() {
+    console.log()
+  }
 }
